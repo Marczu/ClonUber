@@ -13,9 +13,9 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     @BindView(R.id.driver)
-    private Button driver;
+    Button driver;
     @BindView(R.id.customer)
-    private Button customer;
+    Button customer;
 
 
     @Override
@@ -31,6 +31,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
                 return;
+            }
+        });
+
+        customer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, CustomerLoginActivity.class);
+                startActivity(intent);
+                finish();
+                return;
+
             }
         });
     }
