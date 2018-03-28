@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DriverLoginActivity"
+    android:padding="40dp">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zostań kierowcą"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:id="@+id/email_driver_edt"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/password_driver_edt"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hasło"/>
+
+
+    <Button
+        android:id="@+id/login_driver_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logowanie" />
+
+
+    <Button
+        android:id="@+id/register_driver_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rejestracja" />
+
+
+
+
+</LinearLayout>
